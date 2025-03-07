@@ -1,0 +1,44 @@
+<canvas id="myChart"></canvas> 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+<script>
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    var myChart = new Chart(ctx, {
+
+        type: 'pie', // Or 'bar', 'pie', etc.
+
+        data: {
+            data: [12 , 7 , 6.2 , 1.45, 1, 5, 180],
+
+        },
+
+        options: {
+
+            scales: {
+
+                y: {
+
+                    min: 0, // Set minimum y-axis value
+
+                    max: 100, // Set maximum y-axis value
+
+                    title: { 
+
+                        display: true, 
+
+                        text: 'Values' 
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    });
+
+</script>
